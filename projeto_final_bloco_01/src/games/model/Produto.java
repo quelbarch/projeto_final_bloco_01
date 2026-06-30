@@ -6,15 +6,14 @@ public abstract class Produto {
 	private String nome;
 	private int categoria;
 	private float preco;
-	private String descricao;
 	
 	
-	public Produto(int id, String nome, int categoria, float preco, String descricao) {
+	public Produto(int id, String nome, int categoria, float preco) {
 		this.id = id;
 		this.nome = nome;
 		this.categoria = categoria;
 		this.preco = preco;
-		this.descricao = descricao;
+
 	}
 
 
@@ -56,16 +55,6 @@ public abstract class Produto {
 	public void setPreco(float preco) {
 		this.preco = preco;
 	}
-
-
-	public String getDescricao() {
-		return descricao;
-	}
-
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
 	
 	public void visualizar() {
 		
@@ -87,7 +76,7 @@ public abstract class Produto {
 	    System.out.println("Nome: " + this.nome);
 	    System.out.println("Categoria: " + categoria);
 	    System.out.println("Preço: " + this.preco);
-	    System.out.println("Descrição: " + this.descricao);
+	    System.out.println("\n********************************************");
 	}
 }
 
